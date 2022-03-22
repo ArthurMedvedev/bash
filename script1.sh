@@ -1,13 +1,21 @@
 #!/bin/bash
 
-file_name=hosts
+file_name=ip.out
 
-if locate -A $file_name
-
+if [[ -e $file_name ]]
 then
-    echo $(pwd "$file_name")
+    echo "$file_name exists!"
+    ifconfig > $file_name
+    cat $file_name
 
 else
-    echo "not found(("
+    echo "file was be created!"
+    ifconfig > $file_name
+    cat $file_name
 fi
 
+echo "!"
+echo "!"
+echo "!"
+
+echo "script works right!!!"

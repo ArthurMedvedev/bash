@@ -1,5 +1,8 @@
 #!/bin/bash
 
-[[ ip_one=$(grep  '172.17.0.1' "$(ifconfig)") ]] && ping -c 3 172.17.0.1
+list=('8.8.8.8' '1.1.1.1')
 
-[[ ip_two=$(grep  '127.0.0.1' "$(ifconfig)") ]] && ping -c 3 127.0.0.1
+for host in "${list[@]}"
+do 
+    ping -c 3 $host
+done

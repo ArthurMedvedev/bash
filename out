@@ -1,8 +1,2 @@
-PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=101 time=48.3 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=101 time=130 ms
-64 bytes from 8.8.8.8: icmp_seq=3 ttl=101 time=71.4 ms
-
---- 8.8.8.8 ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 2002ms
-rtt min/avg/max/mdev = 48.323/83.353/130.259/34.488 ms
+ubuntu:x:999:999:Live session user,,,:/home/ubuntu:/bin/bash
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
